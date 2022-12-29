@@ -289,6 +289,11 @@ justify-content: center;
     border-radius: 8px;
 }
 
+.btw{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* scroll */
 .scroll
