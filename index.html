@@ -16,21 +16,14 @@
 
 <body style="margin:0%;">
 
-<div class="px-4 p-2 upnav border-bottom" >
+  <div class="px-4 p-2 upnav border-bottom" >
 
     <div class="p-1 f-center">World<b>Rent</b></div>
 
-    <div class="input-group p-1" style="border: 1px solid var(--blue); border-radius: 10px; width: 40%;">
+    <div class="input-group p-1 shadow" style="border-radius: 10px; width: 40%;">
         <div class="input-group-prepend">
           <button class="btn " type="button"
            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px;">Buy <span class="bi-chevron-down" style="padding-left: 20px;"></span></button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Buy</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
         </div>
         <input type="text" class="form-control" placeholder="Warsaw Poland" style=" outline: none; border: 0px solid transparent; border-left: 1px solid rgb(214, 212, 212);">
         <div class="input-group-prepend" style="border: 0px !important;">
@@ -39,14 +32,14 @@
     </div>
       
       <div class="f-center">
-<li class="mx-2">More <span class="bi-chevron-down" style="padding-left: 3px;"></span></li>
-<li class="mx-2" style="color: var(--blue);">LogIn</li>
-<li class="mx-2  fw-bold p-2 f-center" style="color: var(--blue); border-radius: 10px; border: 1px solid var(--bs-blue) ; width: 100px;">Register</li>
+<li class="mx-2"></li>
+<a href="./sign/index.html" class="mx-2 text-mute p-2 f-center px-4 f-center shadow" style="border-radius: 5px; text-decoration: none;" >  Buy</a>
+<a href="./sign/index.html" class="mx-2 text-mute p-2 f-center px-4 f-center shadow" style="border-radius: 5px; text-decoration: none;" >  Sell</a>
+<a href="./sign/index.html" class="mx-2 text-mute p-2 f-center px-4 f-center shadow" style="border-radius: 5px; text-decoration: none;" >  Rent</a>
+<a href="./sign/index.html" class="mx-2 p-2 px-4 f-center shadow text-mute" style="border-radius: 5px; text-decoration: none;" >Sign</a>
       </div>
 
 </div>
-
-
 
 <div class="hide-sm-md">
 
@@ -69,11 +62,8 @@
 </div>
 
 <!-- 2 -->
-<div class="d-flex align-items-center">
-<div class="p-2 mx-2 bi bi-bell f-center fw-bold" style="width: 20px; height: 20px; border-radius: 10px; position: relative;"> 
-<div class="p-1" style="border-radius: 10px; background-color: var(--notification_pointer); position: absolute; top: -2px; right: -5;"></div>
-</div>
-<div class="p-2 shadow" style="width: 30px; height: 30px; border-radius: 10px; background-image: url('https://picsum.photos/30/30'); background-size: contain; background-repeat: no-repeat;"></div>
+<div class="d-flex align-items-center"> 
+<a href="./profile.html" class="p-2 f-center shadow bi-person" style="width: 30px; height: 30px; border-radius: 10px; text-decoration: none;" ></a>
 </div>
     </div>
 <!-- end scroll header -->
@@ -543,9 +533,9 @@ overflow-y: auto;">
 <!-- search -->
 <div class="d-flex w-100 btw my-2" style="border-radius: 10px;">
 
-<div class="f-center bg-light shadow col-9" style="border-radius: 10px;">
+<div class="f-center bg-light shadow col-10" style="border-radius: 10px;">
 <span class="bi-search p-2"></span>
-<input type="text" placeholder="search address city or location" class="text-mute f-center px-2"
+<input type="text" placeholder="search address city or location" class="text-mute f-center px-1 grow"
  style="border: 0px solid transparent; outline:none; background:transparent;">
 </div>
 
@@ -574,9 +564,37 @@ overflow-y: auto;">
 
 
     <!-- per content  -->
+    
     <div class="border col-5 grow bg-white m-1" style="border-radius: 10px; position: relative;">
   
-      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img" >
+      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img" height="130" width="200">
+      
+      <div class="w-100 p-2 d-flex position-absolute" style="z-index: 100; top:5px; right:0; justify-content: flex-end;">
+      
+      <div class="border p-2 text-dark bi bi-heart f-center" style="background-color: white; cursor: pointer; border-radius:5px; width: 30px; height: 30px;"></div>
+      </div>
+      
+      
+      <div class="p-2 border-bottom">
+      <b class="display-7" style="color: var(--bs-blue);">$499,000 </b><small class="text-dark fw-bold" style="font-size:10px;">3 hours ago</small>
+      <a href="./details.html" class="text-mute my-1" style="font-size:12px; text-decoration: none;"><span class="bi-geo-alt"></span> ul sarenki 9 Warsaw Poland</a>
+      </div>
+      <div class="p-1 d-flex btw">
+      
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+          <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
+      </div>
+  </div>
+    
+
+
+
+
+    <!-- per content  -->
+    <div class="border col-5 grow bg-white m-1" style="border-radius: 10px; position: relative;">
+  
+      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img"   height="130" width="200">
       
       <div class="w-100 p-2 d-flex position-absolute" style="z-index: 100; top:5px; right:0; justify-content: flex-end;">
       
@@ -590,14 +608,66 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
     
 
 
+
+
+    <!-- per content  -->
+    <div class="border col-5 grow bg-white m-1" style="border-radius: 10px; position: relative;">
+  
+      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img"  height="130" width="200">
+      
+      <div class="w-100 p-2 d-flex position-absolute" style="z-index: 100; top:5px; right:0; justify-content: flex-end;">
+      
+      <div class="border p-2 text-dark bi bi-heart f-center" style="background-color: white; cursor: pointer; border-radius:5px; width: 30px; height: 30px;"></div>
+      </div>
+      
+      
+      <div class="p-2 border-bottom">
+      <b class="display-7" style="color: var(--bs-blue);">$499,000 </b><small class="text-dark fw-bold" style="font-size:10px;">3 hours ago</small>
+      <p class="text-mute my-1" style="font-size:12px;"><span class="bi-geo-alt"></span> ul sarenki 9 Warsaw Poland</p>
+      </div>
+      <div class="p-1 d-flex btw">
+      
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+          <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
+      </div>
+  </div>
+    
+
+
+
+
+    <!-- per content  -->
+    <div class="border col-5 grow bg-white m-1" style="border-radius: 10px; position: relative;">
+  
+      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img"  height="130" width="200">
+      
+      <div class="w-100 p-2 d-flex position-absolute" style="z-index: 100; top:5px; right:0; justify-content: flex-end;">
+      
+      <div class="border p-2 text-dark bi bi-heart f-center" style="background-color: white; cursor: pointer; border-radius:5px; width: 30px; height: 30px;"></div>
+      </div>
+      
+      
+      <div class="p-2 border-bottom">
+      <b class="display-7" style="color: var(--bs-blue);">$499,000 </b><small class="text-dark fw-bold" style="font-size:10px;">3 hours ago</small>
+      <p class="text-mute my-1" style="font-size:12px;"><span class="bi-geo-alt"></span> ul sarenki 9 Warsaw Poland</p>
+      </div>
+      <div class="p-1 d-flex btw">
+      
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+          <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
+      </div>
+  </div>
+    
 
 
     <!-- per content  -->
@@ -617,87 +687,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
-          <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
-      </div>
-  </div>
-    
-
-
-
-
-    <!-- per content  -->
-    <div class="border col-5 grow bg-white m-1" style="border-radius: 10px; position: relative;">
-  
-      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img" >
-      
-      <div class="w-100 p-2 d-flex position-absolute" style="z-index: 100; top:5px; right:0; justify-content: flex-end;">
-      
-      <div class="border p-2 text-dark bi bi-heart f-center" style="background-color: white; cursor: pointer; border-radius:5px; width: 30px; height: 30px;"></div>
-      </div>
-      
-      
-      <div class="p-2 border-bottom">
-      <b class="display-7" style="color: var(--bs-blue);">$499,000 </b><small class="text-dark fw-bold" style="font-size:10px;">3 hours ago</small>
-      <p class="text-mute my-1" style="font-size:12px;"><span class="bi-geo-alt"></span> ul sarenki 9 Warsaw Poland</p>
-      </div>
-      <div class="p-1 d-flex btw">
-      
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
-          <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
-      </div>
-  </div>
-    
-
-
-
-
-    <!-- per content  -->
-    <div class="border col-5 grow bg-white m-1" style="border-radius: 10px; position: relative;">
-  
-      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img" >
-      
-      <div class="w-100 p-2 d-flex position-absolute" style="z-index: 100; top:5px; right:0; justify-content: flex-end;">
-      
-      <div class="border p-2 text-dark bi bi-heart f-center" style="background-color: white; cursor: pointer; border-radius:5px; width: 30px; height: 30px;"></div>
-      </div>
-      
-      
-      <div class="p-2 border-bottom">
-      <b class="display-7" style="color: var(--bs-blue);">$499,000 </b><small class="text-dark fw-bold" style="font-size:10px;">3 hours ago</small>
-      <p class="text-mute my-1" style="font-size:12px;"><span class="bi-geo-alt"></span> ul sarenki 9 Warsaw Poland</p>
-      </div>
-      <div class="p-1 d-flex btw">
-      
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
-          <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
-      </div>
-  </div>
-    
-
-
-    <!-- per content  -->
-    <div class="border col-5 grow bg-white m-1" style="border-radius: 10px; position: relative;">
-  
-      <img src="https://picsum.photos/200/130" alt="properties" class="w-100 c_img" >
-      
-      <div class="w-100 p-2 d-flex position-absolute" style="z-index: 100; top:5px; right:0; justify-content: flex-end;">
-      
-      <div class="border p-2 text-dark bi bi-heart f-center" style="background-color: white; cursor: pointer; border-radius:5px; width: 30px; height: 30px;"></div>
-      </div>
-      
-      
-      <div class="p-2 border-bottom">
-      <b class="display-7" style="color: var(--bs-blue);">$499,000 </b><small class="text-dark fw-bold" style="font-size:10px;">3 hours ago</small>
-      <p class="text-mute my-1" style="font-size:12px;"><span class="bi-geo-alt"></span> ul sarenki 9 Warsaw Poland</p>
-      </div>
-      <div class="p-1 d-flex btw">
-      
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -707,7 +698,8 @@ overflow-y: auto;">
   
   
   
-  </div>
+  
+</div>
 
   
 
@@ -742,8 +734,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -899,8 +891,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1056,8 +1048,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1212,8 +1204,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1374,8 +1366,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1401,8 +1393,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1428,8 +1420,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1455,8 +1447,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1480,8 +1472,8 @@ overflow-y: auto;">
       </div>
       <div class="p-1 d-flex btw">
       
-        <div class="col-4 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
-        <div class="col-4 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
+         <div class="col-5 p-1" style="text-align: left;"><span class="text-mute bi bi-bounding-box-circles"  style="font-size: 12px;"> 1.211 ft</span></div>
+        <div class="col-5 p-1" style="text-align: right;"> <span class="text-mute bi bi-truck-flatbed mx-1"  style="font-size: 12px; "> 3</span> 
           <span class="text-mute bi bi-car-front-fill" style="font-size: 12px;"> 3</span></div>
       </div>
   </div>
@@ -1498,21 +1490,21 @@ overflow-y: auto;">
 <!-- bootom nav -->
 <div class="w-100 p-2 px-3 bg-white d-flex btw" style="align-items:center; position: fixed; bottom: 0;left: 0; right: 0; z-index: 199;">
 
-  <span class="p-1 fw-bold bi bi-house-door-fill text-mute" style="font-size: 20px; color: var(--blue);"></span>
-  <span class="p-1 fw-bold bi bi-chat text-mute" style="font-size: 20px; "></span>
-  <div class="p-2 f-center d-flex"
+  <span class="p-1 clickable fw-bold bi bi-house-door-fill text-mute" style="font-size: 20px; color: var(--blue);"></span>
+  <a href="./Post.html" class="p-1 fw-bold bi bi-upload text-mute" style="font-size: 20px; text-decoration: none;"></a>
+  <div class="p-2 clickable f-center d-flex"
    style="background: rgb(236, 233, 233); border-radius: 100px; position: absolute;top: -30px; left: 0;
     width: 55px; height: 60px;
   right: 0;
   margin: auto;">
-  <div class="p-2 m-2 fw-bold bi bi-geo-alt f-center"
+  <div class="clickable p-2 m-2 fw-bold bi bi-geo-alt f-center"
    style="color:var(--blue); width: 70px; font-size: 35px; height: 50px; border-radius: 50px;"></div>
   </div>
 <!-- start_nothing -->
   <div style="color:white"></div>
 <!-- end_nothing -->
-  <span class="p-1 fw-bold bi bi-heart text-mute" style="font-size: 20px; "></span>
-  <span class="p-1 fw-bold bi bi-person text-mute" style="font-size: 20px; "></span>
+  <span class="p-1 clickable fw-bold bi bi-heart text-mute" style="font-size: 20px; "></span>
+  <a href="./profile.html" class="p-1 fw-bold bi bi-person text-mute" style="font-size: 20px; text-decoration: none;"></a>
 
 </div>
 </section>

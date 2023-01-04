@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/posting.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+<body style="margin:0%;">
+
+<div class="px-4 p-2 upnav border-bottom" >
+
+    <div class="p-1 f-center">World<b>Rent</b></div>
+
+    <div class="input-group p-1 shadow" style="border-radius: 10px; width: 40%;">
+        <div class="input-group-prepend">
+          <button class="btn " type="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px;">Buy <span class="bi-chevron-down" style="padding-left: 20px;"></span></button>
+        </div>
+        <input type="text" class="form-control" placeholder="Warsaw Poland" style=" outline: none; border: 0px solid transparent; border-left: 1px solid rgb(214, 212, 212);">
+        <div class="input-group-prepend" style="border: 0px !important;">
+            <button class="btn bi bi-search" ></button>
+          </div>   
+    </div>
+      
+      <div class="f-center">
+<li class="mx-2"></li>
+<a href="./sign/index.html" class="mx-2 text-mute p-2 f-center px-4 f-center shadow" style="border-radius: 5px; text-decoration: none;" >  Buy</a>
+<a href="./sign/index.html" class="mx-2 text-mute p-2 f-center px-4 f-center shadow" style="border-radius: 5px; text-decoration: none;" >  Sell</a>
+<a href="./sign/index.html" class="mx-2 text-mute p-2 f-center px-4 f-center shadow" style="border-radius: 5px; text-decoration: none;" >  Rent</a>
+<a href="./sign/index.html" class="mx-2 p-2 px-4 f-center shadow text-mute" style="border-radius: 5px; text-decoration: none;" >Sign</a>
+      </div>
+
+</div>
+
+<!-- mobile header -->
+<header class="btw p-2 border-bottom res_bottom_nav">
+
+
+  <a href="./" class="py-2 clickable bi-chevron-left px-2 text-dark display-7 fw-bold">  </a>
+   <h6 class="p-2 fw-bold " >Upload New Properties</h6>
+
+  
+  <div class="text-dark p-2 fw-bold">
+      <div class="bg-dark" style="width: 15px; height:2px; border-radius:2px;"></div>
+      <div class="bg-dark my-1" style="width: 8px; height:2px; border-radius:2px;"></div>
+      <div class="bg-dark" style="width: 15px; height:2px; border-radius:2px;"></div>
+  </div>
+  </header>
+  
+
+<section class="d-flex"><!-- map -->
+<div class="col-lg-6 map bg-light hide-sm-md" ></div>
+<!-- map -->
+
+
+
+<section class="col-lg-6 col-12 detail_x_scroll">
+
+    <br>
+
+
+    <div class="fw-bold mx-2 p-3 bg-light" style="border-left: 5px solid rgb(34, 169, 215); border-top-left-radius: 5px; border-bottom-left-radius: 5px;">Properties Thumbnail</div>
+
+    
+
+    <br><div class="container py-2 bg-white">
+        <div class="d-flex p-2 banner_image detail_scroll w-100">
+        <div class="col-sm-4 col-8 imgUp m-2" >
+          <div class="imagePreview"></div>
+      <label class="p-2 f-center btn-primary bg-light text-center">
+                                                          
+        <span class="fw-bold bi-file-earmark-image"></span>
+        <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                      </label>
+        </div><!-- col-2 -->
+        <i class="bi-plus fw-bold imgAdd f-center bg-light shadow text-dark p-3 d-flex " style="font-size: 15px;"></i>
+       </div><!-- row -->
+      </div><!-- container -->
+      
+      
+
+<div class="p-3">
+
+
+
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+      </div>
+      
+      <label for="basic-url">Your vanity URL</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <div class="input-group-append">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+      
+    
+    
+</div>
+
+<div class="w-100 d-flex" style="justify-content: flex-end">
+    <div class="btn btn-primary mx-2 rounded">List Property</div>
+</div>
+<br>
+<br>
+</section>
+
+</section>
+
+
+
+
+<!-- bootom nav -->
+<div class="w-100 p-2 px-3 bg-white btw res_bottom_nav" style="align-items:center; position: fixed; bottom: 0;left: 0; right: 0; z-index: 199;">
+
+  <span class="p-1 clickable fw-bold bi bi-house-door-fill text-mute" style="font-size: 20px; color: var(--blue);"></span>
+  <span class="p-1 clickable fw-bold bi bi-upload text-mute" style="font-size: 20px; "></span>
+  <div class="p-2 clickable f-center d-flex"
+   style="background: rgb(236, 233, 233); border-radius: 100px; position: absolute;top: -30px; left: 0;
+    width: 55px; height: 60px;
+  right: 0;
+  margin: auto;">
+  <div class="clickable p-2 m-2 fw-bold bi bi-geo-alt f-center"
+   style="color:var(--blue); width: 70px; font-size: 35px; height: 50px; border-radius: 50px;"></div>
+  </div>
+<!-- start_nothing -->
+  <div style="color:white"></div>
+<!-- end_nothing -->
+  <span class="p-1 clickable fw-bold bi bi-heart text-mute" style="font-size: 20px; "></span>
+  <a href="./profile.html" class="p-1 fw-bold bi bi-person text-mute" style="font-size: 20px; text-decoration: none;"></a>
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+
+$(".imgAdd").click(function(){
+    $(this).closest(".detail_scroll").find('.imgAdd').before('<div class="col-sm-4 col-8 m-2 imgUp"><div class="imagePreview "></div><label class="p-2 f-center btn-primary bg-light text-center"><span class="fw-bold bi-file-earmark-image"></span><input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="bi-trash3 del p-2 f-center text-danger"></i></div>');
+  });
+  $(document).on("click", "i.del" , function() {
+      $(this).parent().remove();
+  });
+  $(function() {
+      $(document).on("change",".uploadFile", function()
+      {
+              var uploadFile = $(this);
+          var files = !!this.files ? this.files : [];
+          if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+   
+          if (/^image/.test( files[0].type)){ // only image file
+              var reader = new FileReader(); // instance of the FileReader
+              reader.readAsDataURL(files[0]); // read the local file
+   
+              reader.onloadend = function(){ // set image data as background of div
+                  //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+  uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+              }
+          }
+        
+      });
+  });
+</script>
+
+</body>
+</html>

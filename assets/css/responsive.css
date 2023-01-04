@@ -19,6 +19,27 @@ default  */
     {
         display: block;
     }
+    .details
+{
+display: block;
+
+
+}
+.detail_res
+{
+    width: 100%;
+}
+.res_m
+{
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.res_bottom_nav
+{
+    display: flex !important;
+}
 
  }
 
@@ -43,6 +64,29 @@ default  */
     {
         display: block;
     }
+    .details
+{
+display: block;
+
+
+}
+.detail_res
+{
+    width: 100%;
+}
+.res_m
+{
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.res_bottom_nav
+{
+    display: flex !important;
+}
+
+
 
  }
  
@@ -67,6 +111,17 @@ default  */
     {
         display: none;
     }
+    .details
+{
+display: flex;
+
+
+}
+
+.res_bottom_nav
+{
+    display: none !important;
+}
 
 }
 /* 
@@ -91,6 +146,16 @@ Large devices (desktops, 992px and up)
     {
         display: none;
     }
+    .details
+{
+display: flex;
+
+
+}
+.res_bottom_nav
+{
+    display: none !important;
+}
  }
 /* 
 Extra large devices  */
@@ -114,6 +179,19 @@ Extra large devices  */
     {
         display: none;
     }
+    .details
+{
+display: flex;
+
+
+}
+.res_bottom_nav
+{
+    display: none !important;
+}
+
+
+
  }
 
 
