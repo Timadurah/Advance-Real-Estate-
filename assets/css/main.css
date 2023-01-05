@@ -93,6 +93,10 @@ color: var(--mute);
 
 
 /* componenets styles */
+.small
+{
+    font-size: 10px;
+}
 .clickable
 {
     cursor: pointer;
