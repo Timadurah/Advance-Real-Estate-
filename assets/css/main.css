@@ -54,6 +54,34 @@ background: var(--scroll);
 
 }
 
+
+/* mobile filter */
+
+.side_nav_mobile
+{
+height: 90vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+overflow-y: auto;
+
+}
+
+
+.side_nav_mobile::-webkit-scrollbar
+{
+    width: 5px;
+}
+.side_nav_mobile::-webkit-scrollbar-track
+{
+border-radius: 10px;
+}
+.side_nav_mobile::-webkit-scrollbar-thumb:hover
+{
+background: var(--scroll);
+
+}
+
 * {
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -93,6 +121,10 @@ color: var(--mute);
 
 
 /* componenets styles */
+.small
+{
+    font-size: 10px;
+}
 .clickable
 {
     cursor: pointer;
@@ -298,6 +330,32 @@ background: var(--scroll);
 
 }
 
+
+
+
+/* mobile */
+
+.pc_products_x_scroll
+{                                                                                                                                           
+    
+    overflow-x: scroll;
+}
+
+
+.pc_products_x_scroll::-webkit-scrollbar
+{
+    height: 5px;
+    
+}
+.pc_products_x_scroll::-webkit-scrollbar-track
+{
+border-radius: 10px;
+}
+.pc_products_x_scroll::-webkit-scrollbar-thumb
+{
+background: var(--scroll);
+
+}
 /* detail_scroll */
 
 
@@ -345,3 +403,46 @@ border-radius: 10px;
 background: var(--scroll);
 
 }
+
+
+/* side bar */
+
+
+.sidenav {
+    height: 100%;
+display: none; 
+   position: fixed;
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

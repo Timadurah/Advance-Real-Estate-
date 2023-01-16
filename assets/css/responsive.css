@@ -15,6 +15,11 @@ default  */
         display: none !important;
 
     }
+    .hide-res
+    {
+        display: none;
+
+    }
     .hide_lg
     {
         display: block;
@@ -58,6 +63,11 @@ display: block;
     .hide-sm-md
     {
         display: none !important;
+
+    }
+    .hide-res
+    {
+        display: none;
 
     }
     .hide_lg
@@ -107,6 +117,12 @@ display: block;
         display: flex;
 
     }
+
+    .hide-res
+    {
+        display: block;
+
+    }
     .hide_lg
     {
         display: none;
@@ -142,6 +158,12 @@ Large devices (desktops, 992px and up)
         display: flex;
 
     }
+
+    .hide-res
+    {
+        display: block;
+
+    }
     .hide_lg
     {
         display: none;
@@ -172,6 +194,12 @@ Extra large devices  */
     .hide-sm-md
     {
         display: flex;
+
+    }
+
+    .hide_res
+    {
+        display: block;
 
     }
  

@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-     <!-- development offline scripts -->
-<link rel="stylesheet" href="./assets/css/bootstrap.css">
-<script src="./assets/js/bootstrap.min.js"></script>  
-  
     <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -26,7 +22,7 @@
 
     <div class="p-1 f-center">World<b>Rent</b></div>
 
-    <div class="input-group p-1 border" style="border-radius: 10px; width: 40%;">
+    <div class="input-group p-1 shadow" style="border-radius: 10px; width: 40%;">
         <div class="input-group-prepend">
           <button class="btn " type="button"
            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px;">Buy <span class="bi-chevron-down" style="padding-left: 20px;"></span></button>
@@ -74,28 +70,17 @@
     <br>
 
 
-    <div class="fw-bold mx-2 p-3 bg-light" style="border-left: 5px solid rgb(34, 169, 215); border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
-      Outer view of property <br> <small class="text-mute">  This image will show on your post  </small></div>
+    <div class="fw-bold mx-2 p-3 bg-light" style="border-left: 5px solid rgb(34, 169, 215); border-top-left-radius: 5px; border-bottom-left-radius: 5px;">Properties Thumbnail</div>
 
     
 
- <div class="w-100 p-2 f-center">
-
-<img src="./assets/image/banner_.svg" id="banner" onclick="$trigger('banner_img')" class="col-12 col-lg-6 clickable rounded text-mute text-center m-3" style="font-size: 100px; height: 180px; width: 250px; border: 1px dashed rgb(219, 212, 212);">
-<input type="file" class="banner_img" id="banner_img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;" onchange="$F('banner_img','banner')">
-
- </div>
-
-<br>
-<div class="fw-bold mx-2 p-3 bg-light" style="border-left: 5px solid rgb(34, 169, 215); border-top-left-radius: 5px; border-bottom-left-radius: 5px;">inner view of Properties</div>
-
     <br><div class="container py-2 bg-white">
         <div class="d-flex p-2 banner_image detail_scroll w-100">
-        <div class="col-sm-4 col-8 imgUp m-2 border"  >
+        <div class="col-sm-4 col-8 imgUp m-2" >
+          <div class="imagePreview"></div>
       <label class="p-2 f-center btn-primary bg-light text-center">
-                                            <div class="imagePreview" style="background-image: url('./assets/image/banner_.svg');"></div>
-                        
-        <span class="fw-bold bi-file-earmark-image "></span>
+                                                          
+        <span class="fw-bold bi-file-earmark-image"></span>
         <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
                       </label>
         </div><!-- col-2 -->
@@ -110,127 +95,55 @@
 
 
 
-
-  <div class="mb-3">
-    <label for="Topic" class="form-label">Topic</label>
-    <input type="text" class="form-control" id="Topic" placeholder="property topic">
-  </div>
-
-  <div class="mb-3">
-    <label for="description" class="form-label">Property description</label>
-    <textarea class="form-control" id="description" rows="3"></textarea>
-  </div>
-
-    <label for="bed" class="form-label">Price</label>
-
-  <div class="input-group mb-3">
-
-    <div class="input-group-prepend">
-      <span class="input-group-text">#</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-    <div class="input-group-append">
-      <span class="input-group-text">.00</span>
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <label for="bed" class="form-label">Beds</label>
-    <input type="text" class="form-control" id="bed" placeholder="Amount Or not include">
-  </div>
-  
-  <div class="mb-3">
-    <label for="car allow" class="form-label">Car allow</label>
-    <input type="text" class="form-control" id="car allow" placeholder="Amount Or not include">
-  </div>
-
- 
-  <div class="mb-3">
-    <label for="size" class="form-label">size</label>
-    <input type="text" class="form-control" id="size" placeholder="size of the property">
-  </div>
-
- <div class="mb-3">
-    <label for="StreetAddress" class="form-label">Street Address</label>
-    <input type="text" class="form-control" id="street" placeholder="Street e.g 425 Florence Cath Street">
-  </div>
     <div class="mb-3">
-    <label for="city" class="form-label">City</label>
-    <input type="text" class="form-control" id="city" placeholder="City e.g leki">
-  </div>
-  <div class="mb-3">
-    <label for="state" class="form-label">State</label>
-    <input type="text" class="form-control" id="state" placeholder="State e.g lagos">
-  </div>
-  
-  <div class="mb-3">
-    <label for="Category" class="form-label">Category</label>
-  </div>
+        <label for="Topic" class="form-label">Topic</label>
+        <input type="text" class="form-control" id="Topic" placeholder="property topic">
+      </div>
+      <div class="mb-3">
+        <label for="Street" class="form-label">Street e.g 425 Florence Cath Street</label>
+        <textarea class="form-control" id="Street" rows="3"></textarea>
+      </div>
 
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      For sell
-    </label>
-  </div>
-  <div class="form-check mb-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-    <label class="form-check-label" for="defaultCheck2">
-      To Rent
-    </label>
-  </div>
 
- 
-  <div class="mb-3">
-    <label for="Category" class="form-label">Sub category</label>
-  </div>
 
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-     House
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-    <label class="form-check-label" for="defaultCheck2">
-      Hall
-    </label>
-  </div><div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-    <label class="form-check-label" for="defaultCheck2">
-      Office
-    </label>
-  </div><div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-    <label class="form-check-label" for="defaultCheck2">
-      Hostel
-    </label>
-  </div><div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-    <label class="form-check-label" for="defaultCheck2">
-      Shop
-    </label>
-  </div><div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-    <label class="form-check-label" for="defaultCheck2">
-      Rides
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-    <label class="form-check-label" for="defaultCheck2">
-      Equilpment
-    </label>
-  </div>
-  
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+      </div>
+      
+      <label for="basic-url">Your vanity URL</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <div class="input-group-append">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
       
     
     
 </div>
 
 <div class="w-100 d-flex" style="justify-content: flex-end">
-    <div class="btn btn-primary mx-2 rounded">Upload Property</div>
+    <div class="btn btn-primary mx-2 rounded">List Property</div>
 </div>
 <br>
 <br>
@@ -267,7 +180,36 @@
 
 
 
-<script src="./assets/js/main.js"></script>
+
+<script>
+
+
+$(".imgAdd").click(function(){
+    $(this).closest(".detail_scroll").find('.imgAdd').before('<div class="col-sm-4 col-8 m-2 imgUp"><div class="imagePreview "></div><label class="p-2 f-center btn-primary bg-light text-center"><span class="fw-bold bi-file-earmark-image"></span><input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="bi-trash3 del p-2 f-center text-danger"></i></div>');
+  });
+  $(document).on("click", "i.del" , function() {
+      $(this).parent().remove();
+  });
+  $(function() {
+      $(document).on("change",".uploadFile", function()
+      {
+              var uploadFile = $(this);
+          var files = !!this.files ? this.files : [];
+          if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+   
+          if (/^image/.test( files[0].type)){ // only image file
+              var reader = new FileReader(); // instance of the FileReader
+              reader.readAsDataURL(files[0]); // read the local file
+   
+              reader.onloadend = function(){ // set image data as background of div
+                  //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+  uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+              }
+          }
+        
+      });
+  });
+</script>
 
 </body>
 </html>
